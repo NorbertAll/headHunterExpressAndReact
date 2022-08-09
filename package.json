@@ -1,0 +1,25 @@
+{
+  "name": "headhunterexpressbackend",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000h\u0000e\u0000a\u0000d\u0000H\u0000u\u0000n\u0000t\u0000e\u0000r\u0000E\u0000x\u0000p\u0000r\u0000e\u0000s\u0000s\u0000B\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NorbertAll/headHunterExpressBackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NorbertAll/headHunterExpressBackend/issues"
+  },
+  "homepage": "https://github.com/NorbertAll/headHunterExpressBackend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19"
+  }
+}
