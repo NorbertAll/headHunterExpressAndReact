@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes)=>{
     const Users = sequelize.define("Users", {
-        e_mail: {
+        email: {
             type: DataTypes.STRING,
             allowNull:false
         },
@@ -9,23 +9,23 @@ module.exports = (sequelize, DataTypes)=>{
             allowNull:false
         },
         role: {
-            type: DataTypes.STRING,
-          //  values: ['admin', 'hr', 'student'],
+            type: DataTypes.ENUM,
+            values: ['admin', 'hr', 'student'],
             allowNull:false
         },
         id_role:{
             type: DataTypes.STRING,
-            allowNull:false
+            allowNull:true
         },
         token: {
             type: DataTypes.STRING,
-            allowNull:false
+            allowNull:true
         }}, 
         {
             timestamps: false,
            
         }
       );
-       
+      
    return Users;
 };

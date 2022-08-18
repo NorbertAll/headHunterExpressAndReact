@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes)=>{
     const Student = sequelize.define("Student", {
-        e_mail: {
+        email: {
             type: DataTypes.STRING,
             allowNull:false,
         },

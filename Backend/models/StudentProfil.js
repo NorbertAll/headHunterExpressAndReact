@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes)=>{
     const StudentProfil = sequelize.define("StudentProfil", {
-        e_mail: {
+        email: {
             type: DataTypes.STRING,
             allowNull:false
         },
@@ -75,10 +75,7 @@ module.exports = (sequelize, DataTypes)=>{
             timestamps: false,
            
         });
-        StudentProfil.associate = (models)=>{
-            StudentProfil.hasOne(models.Student, {
-                onDelete: "cascade",
-            });
-        };
+        
+        
    return StudentProfil;
 };

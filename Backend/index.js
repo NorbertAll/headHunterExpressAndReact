@@ -4,9 +4,14 @@ const cors =require('cors');
 app.use(express.json());
 app.use(cors());
 const db = require('./models');
+const hrRouter = require('./routes/HrUser');
+app.use("/hr", hrRouter);
+const userRouter = require('./routes/User');
+app.use("/auth", userRouter);
 
-// const ideaRouter = require('./routes/');
-// app.use("/", ideaRouter);
+
+
+
 
 
 
